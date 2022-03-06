@@ -6,6 +6,6 @@ short_venue: DCOSS
 full_venue: IEEE International Conference on Distributed Computing in Sensor Systems
 year: 2021
 type: Poster Paper
-link: https://inrg.soe.ucsc.edu/wp-content/uploads/2021/08/DCOSS_2021_PIMAP.pdf
+link: paper_pdfs/DCOSS21.pdf
 notes: Extended in conference paper above.
 ---
