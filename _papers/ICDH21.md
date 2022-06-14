@@ -6,5 +6,5 @@ short_venue: ICDH
 full_venue: IEEE International Conference on Digital Health
 year: 2021
 type: Conference Paper
-link: paper_pdfs/ICDH21.pdf
+pdf: paper_pdfs/ICDH21.pdf
 ---

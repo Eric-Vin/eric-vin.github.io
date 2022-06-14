@@ -46,9 +46,9 @@ permalink: /research
       {{ pap.short_venue}}
     {% endif %}
     {% if pap.full_venue %}
-      {{pap.year}},
+      {{pap.year | round}},
     {% else %}
-      {{pap.year}}
+      {{pap.year | round}}
     {% endif %}
     {% if pap.full_venue %}
       ({{ pap.full_venue }})
@@ -56,11 +56,14 @@ permalink: /research
   </div>
   <div class="paper_type"> {{pap.type}} </div>
   {% if pap.notes %}
-    <div class="paper_notes"> <em> Note: {{pap.notes}} </em> </div>
+    <div class="paper_notes"> <em> {{pap.notes}} </em> </div>
   {% endif %}
   <div class="paper_links">
     {% if pap.link %}
-      <a href="{{pap.link}}">[PDF]</a>
+      <a href="{{pap.link}}">[Link]</a>
+    {% endif %}
+    {% if pap.pdf %}
+      <a href="{{pap.pdf}}">[PDF]</a>
     {% endif %}
     {% if pap.doi %}
       <a href="{{pap.doi}}">[DOI]</a>

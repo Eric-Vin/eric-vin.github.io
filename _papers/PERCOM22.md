@@ -6,5 +6,5 @@ short_venue: PerCom
 full_venue: IEEE International Conference on Pervasive Computing and Communications
 year: 2022
 type: WIP Paper
-link: paper_pdfs/PERCOM22.pdf
+pdf: paper_pdfs/PERCOM22.pdf
 ---
