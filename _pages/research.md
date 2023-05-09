@@ -54,7 +54,7 @@ permalink: /research
       ({{ pap.full_venue }})
     {% endif %}
   </div>
-  <div class="paper_type"> {{pap.type}} </div>
+  <div class="paper_type"> <em> {{pap.type}} </em> </div>
   {% if pap.notes %}
     <div class="paper_notes"> <em> {{pap.notes}} </em> </div>
   {% endif %}
@@ -114,17 +114,9 @@ permalink: /research
 }
 </style>
 
-{% assign projects = site.projects%}
+{% assign projects = site.projects | sort: "order"%}
 {% for proj in projects %}
 <div class="proj_item">
-  <div class="proj_teaser">
-    <a href="{{proj.link}}">
-      <img
-        src="/images/projects/{{proj.icon}}"
-        class="thumbnail"
-      >
-    </a>
-  </div>
   <div class="proj_title">{{proj.title}}</div>
   <div class="proj_description">{{proj.description}}</div>
   <div class="proj_links">
